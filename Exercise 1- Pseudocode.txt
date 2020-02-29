@@ -1,0 +1,73 @@
+1. Percepatan sebuah benda akan sebanding dengan gaya yang diberikan pada benda dan berbanding terbalik dengan massa benda. Arah percepatan benda sama dengan arah gaya total yang diberikan pada benda.
+Secara matematis hukum II Newton dirumuskan sebagai berikut: ΣF = m x a
+ΣF = resultan gaya (Newton)
+m = massa benda (kg)
+a = percepatan benda (m/s2)
+Berdasarkan keterangan di atas, buatlah sebuah algoritma / pseudocode untuk menghitung resultan gaya pada sebuah mobil yang memiliki massa benda 600 kg dan ketika didorong oleh tiga orang percepatannya adalah 2 m/s2!
+
+STORE "m" with 600
+STORE "a" with 2
+STORE "newton2" without any value
+
+CALCULATE "m" times "a"
+SET "newton2" value with calculation result
+
+DISPLAY "newton2"
+
+
+2. Apa yang kamu ketahui tentang tanggal 29 Februari? Kamu pasti tahu jika suatu tahun memiliki tanggal 29 Februari berarti tahun tersebut merupakan tahun kabisat.
+Dalam kalender Gregorian, tahun kabisat memiliki beberapa kriteria yaitu antara lain:
+#Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
+#Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+Buatlah algoritma & pseudocode untuk menentukan apakah suatu tahun merupakan tahun kabisat atau bukan!
+
+Algoritma
+-Pilih tahun apa saja
+-Jika tahun habis dibagi 4 dan tidak habis di bagi 100
+-Maka itu tahun Kabisat
+-Atau jika tahun habis di bagi 4, habis dibagi 100, dan habis di bagi 400
+-Maka itu tahun Kabisat
+
+Pseudocode
+STORE "tahun" with any value
+IF "tahun" mod 4 equals 0 and "tahun" mod 100 not equals 0
+  DISPLAY "Tahun Kabisat"
+ELSE IF "tahun" mod 4 equals 0 and "tahun" mod 100 equals 0 equals and "tahun" mod 400 equals 0
+  DISPLAY "Tahun Kabisat"
+ELSE
+  DISPLAY "Bukan Tahun Kabisat"
+
+
+3. Foxie akan mencuci pakaiannya menggunakan mesin cuci. Pakaian yang akan dicuci oleh Foxie sebanyak 20 dan akan dimasukkan ke mesin cuci. Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci.
+Bantulah Foxie untuk menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci menggunakan algoritma & pseudocode perulangan!
+
+Algoritma
+-Masukan baju dari keranjang satu persatu
+-Apabila semua baju di keranjang sudah masuk mesin cuci
+-Mesin cuci menyala
+
+Pseudocode
+STORE "keranjang" with any value (clothes)
+MOVE "keranjang" value to "washing machine"
+IF "keranjang" value not equal 0
+  "keranjang" SUBSTRACT 1
+ELSE
+  Start "washing machine"
+
+
+4. Periksa Kuku
+Seorang guru akan memeriksa kuku siswa-siswinya yang sebanyak 40 orang dengan cara berkeliling kelas. Jika guru menemukan siswa/siswi yang memiliki kuku yang panjang maka guru akan menghukum siswa/siswi tersebut, jika tidak guru akan memuji siswa/siswi tersebut.
+Buatlah algoritma & pseudocode untuk permasalahan diatas.
+
+Algoritma
+-Guru memanggil nama siswa satu persatu
+-Jika siswa memiliki kuku panjang, maka siswa dihukum
+-Jika siswa tidak memiliki kuku panjang, maka siswa dipuji
+
+Pseudocode
+STORE "siswa" with 40
+FOR "siswa" bigger than zero, "siswa" SUBSTRACT by 1
+  IF "siswa" has long nail
+    "siswa" GET punishment
+  ELSE
+    "siswa" GET COMPLIMENT
